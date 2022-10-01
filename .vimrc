@@ -41,7 +41,7 @@ autocmd FileType rust setlocal ts=4 sts=0 sw=4 et ai sta
 " Bash => 2 spaces for indentation
 autocmd FileType sh setlocal ts=2 sts=0 sw=2 et ai sta
 
-" Git commit width
+" Git commit message width
 autocmd FileType gitcommit setlocal tw=72
 
 " Autoremove trailing whitespaces macro
