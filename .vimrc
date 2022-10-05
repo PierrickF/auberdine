@@ -30,6 +30,7 @@ set backspace=indent,eol,start
 set cursorline
 set laststatus=2
 set confirm
+let g:loaded_matchparen=1
 
 " Theme
 colorscheme molokai
