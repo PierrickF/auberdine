@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tomasr/molokai'
+Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'mattn/emmet-vim'
@@ -35,7 +36,8 @@ set confirm
 let g:loaded_matchparen=1
 
 " Theme
-colorscheme molokai
+colorscheme gruvbox
+set bg=dark
 
 " Ruby => 2 spaces for indentation
 autocmd FileType ruby setlocal ts=2 sts=0 sw=2 et ai sta

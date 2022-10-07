@@ -6,3 +6,4 @@ The following files are the foundation to my dev environment.
 * .bashrc
 * .tmux.conf
 * .vimrc
+* .alacritty.yml
