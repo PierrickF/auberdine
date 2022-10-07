@@ -5,5 +5,5 @@ window:
   decorations: "none"
   startup_mode: "maximized"
 
-#key_bindings:
-  #  - { key: F12, action: "ReceiveChar" }
+font:
+  size: 9
