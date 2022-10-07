@@ -152,4 +152,5 @@ export BROWSER='firefox'
 
 # do not highlight any directory when listed with ls
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+
 source ~/.bash_completion/alacritty

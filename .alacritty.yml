@@ -1,5 +1,9 @@
 import:
   - ~/.alacritty-colorscheme/themes/gruvbox_dark.yaml
+
 window:
   decorations: "none"
   startup_mode: "maximized"
+
+#key_bindings:
+  #  - { key: F12, action: "ReceiveChar" }
