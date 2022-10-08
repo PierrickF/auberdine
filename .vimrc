@@ -4,15 +4,13 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tomasr/molokai'
-Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ngmy/vim-rubocop'
-Plugin 'mattn/emmet-vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'pbondoer/vim-42header'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'alexandregv/norminette-vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 " General config
@@ -32,12 +30,15 @@ set cursorline
 set laststatus=2
 set confirm
 
-" Disable match highlighting for { { (
-let g:loaded_matchparen=1
-
 " Theme
 colorscheme gruvbox
 set bg=dark
+
+" Airline status bar
+let g:airline_theme='gruvbox'
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 " Ruby => 2 spaces for indentation
 autocmd FileType ruby setlocal ts=2 sts=0 sw=2 et ai sta
@@ -73,39 +74,3 @@ nmap <Leader>gcc :! gcc -o compiled_output %<CR>
 
 " Autosource .vimrc
 autocmd bufwritepost .vimrc source $MYVIMRC
-
-" 42 config start -------------------------------------------------------------
-
-" C => 4-spaces-long tabs for indentation
-autocmd FileType c setlocal ts=4 sts=4 sw=4 noet ai sta si
-
-" 42 header variables
-let g:hdr42mail = "placeholder@email.com"
-let g:hdr42user = "username"
-
-" 42 hotkeys
-nmap <Leader>42 :Stdheader<CR>
-nmap <Leader>nm :Errors<CR>
-
-" Enable norminette-vim (and gcc)
-let g:syntastic_c_checkers = ['norminette', 'gcc']
-let g:syntastic_aggregate_errors = 1
-" Set the path to norminette (do no set if using norminette of 42 mac)
-let g:syntastic_c_norminette_exec = 'norminette'
-" Support headers (.h)
-let g:c_syntax_for_h = 1
-let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'libft', '../libft/include', '../../libft/include']
-" Pass custom arguments to norminette (this one ignores 42header)
-"let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
-" Check errors when opening a file (disable to speed up startup time)
-let g:syntastic_check_on_open = 1
-" Enable error list
-let g:syntastic_always_populate_loc_list = 1
-" Automatically open error list
-let g:syntastic_auto_loc_list = 1
-" Skip check when closing
-let g:syntastic_check_on_wq = 0
-" Errors list (location list) height
-let g:syntastic_loc_list_height=15
-
-" 42 config end ---------------------------------------------------------------
