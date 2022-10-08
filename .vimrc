@@ -39,6 +39,7 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+let g:airline_section_z = '%l/%L-%c'
 
 " Ruby => 2 spaces for indentation
 autocmd FileType ruby setlocal ts=2 sts=0 sw=2 et ai sta
