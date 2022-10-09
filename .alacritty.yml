@@ -22,4 +22,7 @@ font:
     family: Inconsolata
     style: Bold Italic
 
-  size: 13
+  # External monitor
+  #size: 13
+  # Laptop monitor
+  size: 9
