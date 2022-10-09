@@ -30,6 +30,10 @@ set cursorline
 set laststatus=2
 set confirm
 
+" Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 1
+
 " Theme
 colorscheme gruvbox
 set bg=dark
