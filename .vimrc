@@ -70,6 +70,10 @@ autocmd BufWritePre * call TrimWhitespace()
 " Vim hotkeys
 inoremap kj <ESC>
 nmap cl :noh<CR>
+nnoremap <C-j> <C-f>
+nnoremap <C-f> <Nop>
+nnoremap <C-k> <C-b>
+nnoremap <C-b> <Nop>
 
 " Ruby hotkeys
 let g:vimrubocop_keymap = 0
