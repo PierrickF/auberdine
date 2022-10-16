@@ -1,16 +1,16 @@
 " Plugin manager and plugins
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/pierrick/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'rust-lang/rust.vim'
-Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'morhetz/gruvbox'
 call vundle#end()
 
 " General config
@@ -29,6 +29,7 @@ set backspace=indent,eol,start
 set cursorline
 set laststatus=2
 set confirm
+set t_Co=256
 
 " Syntastic
 let g:syntastic_check_on_open = 1
@@ -45,6 +46,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_section_x = '%{&filetype}'
 let g:airline_section_z = '%l/%L-%c'
+let g:airline#extensions#wordcount#enabled = 0
 
 " Ruby => 2 spaces for indentation
 autocmd FileType ruby setlocal ts=2 sts=0 sw=2 et ai sta
@@ -67,6 +69,7 @@ autocmd BufWritePre * call TrimWhitespace()
 
 " Vim hotkeys
 inoremap kj <ESC>
+nmap cl :noh<CR>
 
 " Ruby hotkeys
 let g:vimrubocop_keymap = 0

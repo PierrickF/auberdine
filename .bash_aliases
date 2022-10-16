@@ -9,3 +9,7 @@ tmux new-session\; \
         run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh'
 
 alias bye='xfce4-session-logout'
+
+alias thebook='rustup doc --book'
+
+alias calendar='gnome-calendar'
