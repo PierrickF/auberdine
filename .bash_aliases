@@ -13,3 +13,5 @@ alias bye='xfce4-session-logout'
 alias thebook='rustup doc --book'
 
 alias calendar='gnome-calendar'
+
+alias vim='nvim'
