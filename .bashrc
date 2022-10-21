@@ -150,6 +150,9 @@ bind 'set enable-bracketed-paste off'
 # set firefox as default browser
 export BROWSER='firefox'
 
+# set neovim as default editor
+export EDITOR='/usr/bin/nvim'
+
 # do not highlight any directory when listed with ls
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
