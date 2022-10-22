@@ -85,5 +85,5 @@ nmap <Leader>rf :RustFmt<CR>
 " C hotkeys
 nmap <Leader>gcc :! gcc -o compiled_output %<CR>
 
-" Autosource .vimrc
-autocmd bufwritepost .vimrc source $MYVIMRC
+" Autosource nvim config file
+autocmd bufwritepost ~/.config/nvim/init.vim source $MYVIMRC
