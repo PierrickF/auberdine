@@ -7,3 +7,5 @@ The following files are the foundation to my dev environment.
 * .tmux.conf
 * .vimrc
 * .alacritty.yml
+* .config/nvim/init.vim
+* .i3/config
