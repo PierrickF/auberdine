@@ -8,7 +8,7 @@ ls -td ~/.tmux/resurrect/{*,.} | tail -n +4 | xargs -I {} rm {}
 tmux new-session\; \
         run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh'
 
-alias bye='xfce4-session-logout'
+alias bye='i3-msg exit'
 
 alias thebook='rustup doc --book'
 
