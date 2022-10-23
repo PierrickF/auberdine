@@ -203,6 +203,14 @@ hide_edge_borders both
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/debian.jpg
 
+# increase screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
+# decrease screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+
+# enable touchpad tapping
+exec xinput set-prop 16 "libinput Tapping Enabled" 1
+
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
