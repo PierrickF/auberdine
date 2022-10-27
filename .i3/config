@@ -168,16 +168,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym $left       resize shrink width 1 px or 1 ppt
+        bindsym $down       resize grow height 1 px or 1 ppt
+        bindsym $up         resize shrink height 1 px or 1 ppt
+        bindsym $right      resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape or Mod1+r
         bindsym Return mode "default"
@@ -217,11 +211,14 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 # enable touchpad tapping
 exec xinput set-prop 16 "libinput Tapping Enabled" 1
 
-# multiple monitors config
+# switch between laptop standalone and laptop + external monitors
 workspace 1 output DP-3
 workspace 2 output DP-1
 workspace 1 output eDP-1
 bindsym Mod1+m exec --no-startup-id reload_monitors
+
+# mouse cursor doesn't focus a window on mouseover
+focus_follows_mouse no
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
