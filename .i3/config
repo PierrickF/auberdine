@@ -190,15 +190,21 @@ bindsym Mod1+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        mode hide
-	hidden_state hide
+       mode hide
+       hidden_state hide
 }
 
 # Hide windows title bar
-default_border none
+default_border pixel
 
 # Hide screen edges borders
-hide_edge_borders both
+#hide_edge_borders both
+
+# Color borders of active window
+client.focused #d65d0e #d65d0e #d65d0e #d65d0e
+client.focused_inactive #282828 #282828 #282828 #282828
+client.unfocused #282828 #282828 #282828 #282828
+client.background #282828
 
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/debian.jpg
@@ -210,6 +216,12 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # enable touchpad tapping
 exec xinput set-prop 16 "libinput Tapping Enabled" 1
+
+# multiple monitors config
+workspace 1 output DP-3
+workspace 2 output DP-1
+workspace 1 output eDP-1
+bindsym Mod1+m exec --no-startup-id reload_monitors
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a

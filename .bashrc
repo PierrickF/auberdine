@@ -160,4 +160,4 @@ export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 source ~/.bash_completion/alacritty
 
 # Activate capslock remap
-setxkbmap -option ctrl:swapcaps
+setxkbmap -layout us -variant intl -option ctrl:swapcaps

@@ -2,8 +2,8 @@ import:
   - ~/.alacritty-colorscheme/themes/gruvbox_dark.yaml
 
 window:
-  decorations: none
-  startup_mode: maximized
+  decorations: full
+  dynamic_padding: true
 
 font:
   normal:
