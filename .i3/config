@@ -149,3 +149,7 @@ bindsym Mod1+m exec --no-startup-id reload_monitors
 
 # mouse cursor doesn't focus a window on mouseover
 focus_follows_mouse no
+
+# send windows to the scratchpad worspace (for background processes)
+bindsym Mod1+minus move scratchpad
+bindsym Mod1+equal scratchpad show
