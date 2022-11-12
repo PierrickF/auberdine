@@ -29,6 +29,8 @@ set backspace=indent,eol,start
 set cursorline
 set laststatus=2
 set confirm
+set undofile
+set undodir=~/.config/nvim/undodir
 set t_Co=256
 
 " Syntastic

@@ -20,8 +20,5 @@ alias calendar='gnome-calendar'
 # open neovim
 alias vim='nvim'
 
-# turn laptop internal monitor off
-alias monitoroff='xrandr --output eDP-1 --off'
-
-# turn laptop internal monitor on
-alias monitoron='xrandr --output eDP-1 --auto'
+# fix for alacritty-ssh compatibility issues
+alias ssh='TERM=xterm-256color ssh'
