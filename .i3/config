@@ -97,8 +97,8 @@ bar {
        tray_output none
        font pango:monospace 12
        colors {
-           background #282828
-	   statusline #ebdbb2
+       	background #282828
+	statusline #ebdbb2
        }
        status_command i3status
 }
@@ -115,23 +115,27 @@ client.background #282828
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/debian.jpg
 
-# increase screen brightness
+# Increase screen brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
-# decrease screen brightness
+# Decrease screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
-# enable touchpad tapping
+# Enable touchpad tapping
 exec xinput set-prop 16 "libinput Tapping Enabled" 1
 
-# switch between laptop internal monitor, and external monitors
+# Switch between laptop internal monitor, and external monitors
 workspace 1 output DP-3
 workspace 2 output DP-1
 workspace 1 output eDP-1
 bindsym Mod1+m exec --no-startup-id reload_monitors
 
-# mouse cursor doesn't focus a window on mouseover
+# Mouse cursor doesn't focus a window on mouseover
 focus_follows_mouse no
 
-# send windows to the scratchpad workspace (for background processes)
+# Send windows to the scratchpad workspace (for background processes)
 bindsym Mod1+minus move scratchpad
 bindsym Mod1+equal scratchpad show
+
+# Disable screensaver and energy saving
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
