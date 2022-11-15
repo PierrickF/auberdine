@@ -71,13 +71,16 @@ command! TrimWhitespace call TrimWhitespace()
 autocmd BufWritePre * call TrimWhitespace()
 
 " Vim hotkeys
+let mapleader = "\<Space>"
 inoremap kj <ESC>
 nmap cl :noh<CR>
+nmap <Leader>w :w<CR>
 nnoremap <C-j> <C-f>
 nnoremap <C-f> <Nop>
 nnoremap <C-k> <C-b>
 nnoremap <C-b> <Nop>
 nnoremap <leader><leader> <c-^>
+
 
 " Ruby hotkeys
 let g:vimrubocop_keymap = 0
