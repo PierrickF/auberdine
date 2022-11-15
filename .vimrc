@@ -11,6 +11,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'morhetz/gruvbox'
+Plugin 'machakann/vim-highlightedyank'
 call vundle#end()
 
 " General config
@@ -76,6 +77,7 @@ nnoremap <C-j> <C-f>
 nnoremap <C-f> <Nop>
 nnoremap <C-k> <C-b>
 nnoremap <C-b> <Nop>
+nnoremap <leader><leader> <c-^>
 
 " Ruby hotkeys
 let g:vimrubocop_keymap = 0
