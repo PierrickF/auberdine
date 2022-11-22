@@ -113,7 +113,7 @@ client.unfocused #282828 #282828 #282828 #282828
 client.background #282828
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/debian.jpg
+exec --no-startup-id feh --bg-fill ~/pictures/wallpapers/debian.jpg
 
 # Increase screen brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
