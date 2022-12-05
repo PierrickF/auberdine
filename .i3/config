@@ -113,7 +113,7 @@ client.unfocused #282828 #282828 #282828 #282828
 client.background #282828
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/pictures/wallpapers/debian.jpg
+exec --no-startup-id feh --bg-fill ~/pictures/wallpapers/ferris_simple.png
 
 # Increase screen brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
@@ -124,9 +124,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 exec xinput set-prop 16 "libinput Tapping Enabled" 1
 
 # Switch between laptop internal monitor, and external monitors
-workspace 1 output DP-3
-workspace 2 output DP-1
-workspace 3 output DP-2
+workspace 1 output DP-1-3
+workspace 2 output DP-1-2
+workspace 3 output DP-1-1
 workspace 1 output eDP-1
 bindsym Mod1+m exec --no-startup-id reload_monitors
 

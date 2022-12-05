@@ -1,6 +1,10 @@
 import:
   - ~/.alacritty-colorscheme/themes/gruvbox_dark.yaml
 
+key_bindings:
+        # ctrl+shift+n opens new window in same directory
+        - { key: N,   mods: Control|Shift, action: SpawnNewInstance }
+
 window:
   decorations: full
   dynamic_padding: true
