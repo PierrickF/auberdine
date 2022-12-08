@@ -14,9 +14,6 @@ alias bye='i3-msg exit'
 # rust book offline
 alias rustbook='rustup doc --book'
 
-# open gnome-calendar
-alias calendar='gnome-calendar'
-
 # open neovim
 alias vim='nvim'
 
