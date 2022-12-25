@@ -152,9 +152,6 @@ export EDITOR='/usr/bin/nvim'
 # No background color for dir with ls
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
-# Alacritty post install config
-#source ~/.bash_completion/alacritty
-
 # Activate capslock remap
 setxkbmap -layout us -variant intl -option ctrl:swapcaps
 
