@@ -125,13 +125,6 @@ export NVM_DIR="$HOME/.nvm"
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="/home/pierrick/.local/bin:/home/pierrick/.rbenv/shims:/home/pierrick/.rbenv/bin:/home/pierrick/.nvm/versions/node/v15.10.0/bin:/home/pierrick/.local/bin:/home/pierrick/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Check for twitch streams
 twitch() { while ! streamlink twitch.tv/"$1" best; do sleep 60; done }
 
@@ -160,7 +153,10 @@ export EDITOR='/usr/bin/nvim'
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 # Alacritty post install config
-source ~/.bash_completion/alacritty
+#source ~/.bash_completion/alacritty
 
 # Activate capslock remap
 setxkbmap -layout us -variant intl -option ctrl:swapcaps
+
+# Permanently add ~/.bin to the PATH
+[[ -d $HOME/.bin ]] && export PATH=$HOME/.bin:$PATH

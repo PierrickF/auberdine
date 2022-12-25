@@ -101,7 +101,7 @@ bar {
 	statusline #ebdbb2
        }
        status_command i3status
-}
+       }
 
 # Hide windows title bar
 default_border pixel
@@ -140,3 +140,6 @@ bindsym Mod1+equal scratchpad show
 # Disable screensaver and energy saving
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
+
+# Lock the screen
+bindsym Mod1+z exec i3lock
