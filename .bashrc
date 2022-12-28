@@ -157,3 +157,6 @@ setxkbmap -layout us -variant intl -option ctrl:swapcaps
 
 # Permanently add ~/.bin to the PATH
 [[ -d $HOME/.bin ]] && export PATH=$HOME/.bin:$PATH
+
+# Mouse speed
+xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' -0.7
