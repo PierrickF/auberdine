@@ -27,6 +27,6 @@ font:
     style: Bold Italic
 
   # External monitor
-  size: 15
+  #size: 15
   # Laptop monitor
-  #size: 10
+  size: 10

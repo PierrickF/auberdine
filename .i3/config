@@ -91,6 +91,8 @@ bar {
        workspace_buttons no
        tray_output none
        font pango:monospace 12
+       mode hide
+       hidden_state hide
        colors {
        	background #282828
 	statusline #ebdbb2
