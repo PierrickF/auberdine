@@ -87,18 +87,18 @@ bindsym Mod1+r mode "resize"
 
 # Start i3bar with i3status
 bar {
-       output eDP-1
-       workspace_buttons no
-       tray_output none
-       font pango:monospace 12
-       mode hide
-       hidden_state hide
-       colors {
-       	background #282828
-	statusline #ebdbb2
-       }
-       status_command i3status
-       }
+	output eDP-1
+	workspace_buttons no
+	tray_output none
+	font pango:monospace 12
+	mode hide
+	hidden_state hide
+	colors {
+		background #282828
+		statusline #ebdbb2
+		}
+	status_command i3status
+	}
 
 # Hide windows title bar
 default_border pixel
@@ -146,3 +146,6 @@ exec --no-startup-id xset -dpms
 
 # Lock the screen
 bindsym Mod1+z exec i3lock
+
+# Toggle between floating and tiling
+bindsym Mod1+Shift+space floating toggle
